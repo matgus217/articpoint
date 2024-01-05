@@ -1,26 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cairo+Play:wght@500;600&family=Caveat:wght@600&family=Chilanka&family=Fira+Sans:wght@300&family=Inter:wght@100&family=Noto+Sans:wght@300&family=Nova+Square&family=Playpen+Sans:wght@500&family=Poppins:ital,wght@1,300&family=Titillium+Web:wght@300&display=swap');
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     font-size: 18px;
     overflow-x: hidden;
 }
 
+
 .logo {
     color: black;
+    font-size: 50px;
+}
+
+.logo span {
+    color: lightskyblue;
 }
 
 .menu {
-    background-color: white;
+    bckground-color: white;
     width: 100%;
     height: 160px;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    opacity: 0.7;
 }
 
 .menu a {
@@ -28,9 +33,47 @@ body {
     text-align: center;
 }
 
+.section-intro {
+    height: 820px;
+    background-image: url(../images/ice2.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-intro h2 {
+    text-align: center;
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.section-intro p {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+.about-section h3 {
+    align-items: center;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.about-section p {
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+
 .navbar {
     overflow: hidden;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     border-radius: 10px;
 }
 
@@ -58,7 +101,7 @@ body {
     color: black;
     padding: 14px 16px;
     background-color: inherit;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     border-radius: 10px;
 }
@@ -93,9 +136,9 @@ body {
     border-radius: 10px;
 }
 
-/* Add a red background color to dropdown links on hover */
+/* Add a black background color to dropdown links on hover */
 .dropdown-content a:hover {
-    background-color: black;
+    background-color: lightskyblue;
     border-radius: 10px;
 }
 
@@ -103,4 +146,31 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
     border-radius: 10px;
+}
+
+.image-slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+    border-radius: 30px;
+
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .5
+    }
+
+    to {
+        opacity: 1
+    }
 }
