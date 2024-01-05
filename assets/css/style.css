@@ -175,6 +175,11 @@ img {
     }
 }
 
+
+
+
+
+
 .button1 {
     font-size: 20px;
     border-radius: 20px;
@@ -193,4 +198,62 @@ img {
 .network a {
     color: lightskyblue;
     font-size: 50px;
+}
+
+
+
+
+#bg-food {}
+
+
+#food {
+    background-color: rgba(25, 25, 25, .7);
+    max-height: 100%;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    min-height: 100vh;
+}
+
+#food-menu {
+    z-index: 1;
+    color: #eeecea;
+    list-style-type: none;
+    padding-top: 190px;
+    padding-bottom: 30px;
+
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.options {
+    text-align: center;
+    color: #e48935;
+    font-family: 'Road Rage', sans-serif;
+    font-size: 60px;
+}
+
+.options-list {
+    text-align: center;
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.img-fluid {
+    max-width: 750px;
+    max-height: 750px;
+}
+
+#good-to-know {
+    text-align: center;
+    list-style-type: none;
+    padding-left: 0px;
+    color: #eeecea
+}
+
+#good-to-know h2 {
+    text-align: center;
+    color: #e48935;
+    font-family: 'Road Rage', sans-serif;
+    font-size: 60px;
 }
