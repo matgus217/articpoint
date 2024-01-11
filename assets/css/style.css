@@ -138,22 +138,23 @@ body {
     border-radius: 10px;
 }
 
-/* Add a black background color to dropdown links on hover */
+
 .dropdown-content a:hover {
     background-color: lightskyblue;
     border-radius: 10px;
 }
 
-/* Show the dropdown menu on hover */
+
 .dropdown:hover .dropdown-content {
     display: block;
     border-radius: 10px;
 }
 
 .image-slideshow {
-    max-width: 2000px;
+    max-width: 1000px;
     position: relative;
     margin: auto;
+
 }
 
 img {
@@ -177,31 +178,62 @@ img {
     }
 }
 
-.button1 {
-    font-size: 20px;
-    border-radius: 20px;
+.footer .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    text-align: center;
+    background-color: lightskyblue;
 }
 
-.button1 a {
-    text-decoration: none;
+.footer .footer-container .box h3 {
+    font-size: 2.5rem;
+    padding: 1rem 0;
     color: black;
 }
 
-.button1:hover {
-    background: lightskyblue;
-
+.footer .footer-container .box2 a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: black;
 }
 
-.social-network {
-    text-align: center;
+.footer .footer-container .box2 a i {
+    padding-right: .5rem;
+}
+
+.footer .footer-container .box2 a:hover i {
+    padding-right: 2rem;
+}
+
+.write {}
+
+.write form {
+    margin: 0 auto 2rem auto;
+    max-width: 60rem;
+    border-radius: var(--border-radius-hover);
+    padding: 3rem;
+    border: var(--border);
+}
+
+.write form .box {
+    width: 100%;
+    padding: 1rem 1.rem;
+    border-radius: .5rem;
     font-size: 20px;
-    background: lightskyblue;
-
+    text-transform: none;
+    color: var(--main-color);
+    border: var(--border);
+    margin: .7rem 0;
 }
 
-.network a {
-    color: white;
-    font-size: 50px;
+.write form .box:focus {
+    border: var(--border-hover);
+}
+
+.write form textarea {
+    height: 15rem;
+    resize: none;
 }
 
 .banner-text {
@@ -225,48 +257,9 @@ img {
     background: lightskyblue;
 }
 
-/* Menu */
-
-.food-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 350px;
-    width: 350px;
-    border-radius: 50%;
-}
-
-#food {
-
-    max-height: 100%;
-    width: 100%;
-    max-width: 100%;
-    position: relative;
-    min-height: 100vh;
-}
-
-#food-menu {
-    z-index: 1;
-    color: black;
-    list-style-type: none;
-    padding-top: 190px;
-    padding-bottom: 30px;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-.options {
+.heading {
     text-align: center;
-    color: lightskyblue;
-    font-family: 'Inter', sans-serif;
-    font-size: 60px;
-}
-
-.options:hover {
-    background: grey;
-    border-radius: 10px;
-
-
+    font-size: 50px;
 }
 
 .options-list {
@@ -274,27 +267,63 @@ img {
     list-style-type: none;
     padding-left: 0px;
     font-weight: bold;
+    font-size: 25px;
+}
+
+.heading:hover {
+    color: lightskyblue;
+
+}
+
+.menu2 .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.menu2 .box-container .box {
+    flex: 1 1 42rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    margin-left: 6rem;
+}
+
+.menu2 .box-container .box:hover {
+    color: lightskyblue;
 }
 
 
 
-#good-to-know {
+.menu2 .box-container .box .content h3 {
+    font-size: 2.2rem;
+    color: black;
+    line-height: 1.8;
+}
+
+.menu2 .box-container .box .content p {
+    font-size: 1.6rem;
+    color: black;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.menu2 .box-container .box .content span {
+    font-size: 2rem;
+    color: black;
+    line-height: 1.8;
+}
+
+
+.timeline-info {
     text-align: center;
-    list-style-type: none;
-    padding-left: 0px;
+    font-size: 50px;
     color: black;
 }
 
-#good-to-know h2 {
-    text-align: center;
+.timeline-info:hover {
     color: lightskyblue;
-    font-family: 'Inter', sans-serif;
-    font-size: 60px;
-}
-
-.good-to-know h2:hover {
-    background: grey;
-    border-radius: 10px;
 }
 
 .container {
